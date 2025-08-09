@@ -1,0 +1,97 @@
+/* Estilos básicos para el carrusel */
+.swiper {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Estilos para las tarjetas */
+  .cardCollection {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cardCollection:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para el elemento seleccionado */
+  .cardCollection.seleccionado {
+    border: 2px solid #007bff;
+    background-color: #f0f8ff;
+  }
+  
+  /* Estilos para el checkbox */
+  .cardCollectioncheckbox-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cardCollectioncustom-checkbox {
+    display: none;
+  }
+  
+  .cardCollectioncheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .cardCollectioncustom-checkbox:checked ~ .cardCollectioncheckmark {
+    background-color: #007bff;
+  }
+  .max-wid{
+    display: flex;
+    gap: 20px;
+    max-width: 100%; /* Ancho máximo del contenedor */
+    width: 90%; /* Ocupa el 100% del espacio disponible hasta el máximo */
+    overflow-x:scroll; /* Habilita el scroll vertical si el contenido excede la altura */
+    border: 1px solid #ccc; /* Borde para visualizar el contenedor */
+    padding: 10px; /* Espacio interno */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+  }
+  .cardCollectiontextBox{
+    width: 180px;
+  }
+  .contenedor::-webkit-scrollbar {
+    width: 12px;
+    padding: 10px; /* Ancho de la barra de scroll */
+  }
+  
+  .contenedor::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo de la pista */
+    border-radius: 6px;
+  }
+  
+  .contenedor::-webkit-scrollbar-thumb {
+    background: #888; /* Color del thumb (barra deslizante) */
+    border-radius: 6px;
+    border: 3px solid #f1f1f1; 
+    min-height: 80px;/* Borde para que no se pegue a los bordes */
+  }
+  
+  .contenedor::-webkit-scrollbar-thumb:hover {
+    background: #1677FF; /* Color del thumb al pasar el mouse */
+  }
+  
+  /* Personalización de la barra de scroll (Firefox) */
+  .contenedor {
+    scrollbar-width: thin; /* Ancho de la barra de scroll */
+    scrollbar-color: #1677FF #f1f1f1; /* Color del thumb y del track */
+  }
+  
+  /* Contenido de ejemplo */
+  .contenido {
+    height: 1000px;
+    background: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
+    padding: 20px;
+    border-radius: 8px;
+  }

@@ -1,0 +1,20 @@
+/* :root{
+    --secundary: #522896;
+    --primary: #5C0CDF;
+    --contraste: #40315A;
+}
+.ant-layout-sider-children{
+    background-color: var(--secundary);
+}
+.ant-menu{
+    background: var(--secundary);
+}
+.ant-menu-item-selected{
+    background-color: var(--primary);
+}
+.bg-gray-100{
+    background: var(--secundary);
+}
+.primary{
+    background: var(--primary);
+} */

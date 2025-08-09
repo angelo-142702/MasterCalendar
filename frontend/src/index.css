@@ -1,0 +1,307 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    background:#242424;
+    color:  white;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  font-optical-sizing: auto;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.primary{
+    background-color: #17a2b8;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.max{
+    height: 450px;
+    overflow-y: scroll;
+}
+.fc-col-header-cell-cushion{
+    color: white;
+    text-decoration: none
+    
+}
+.center{
+ place-items: center;
+ place-content: center;
+ align-items: center;
+}
+.fc-event{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.calendario{
+    width: 100px;
+}
+.ant-layout{
+    height: 100%;
+}
+#root{
+    height: 100%;
+    overflow-y: hidden;
+
+}
+.fc-media-screen {
+    max-width: 760px;
+}
+.ant-layout-content{
+    overflow-y: hidden;
+}
+.fondo{
+    background: hsla(0, 0%, 14%, 0.468);
+    width: 100vw;
+    height: 100vh;
+}
+.size-calendar{
+   width: 75vw;
+    overflow-y: hidden;
+}
+
+.calendar {
+    overflow: scroll;
+    background-color: blue;
+}
+.fc-event-time{
+    display: none;
+}
+.fc-event{
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #38bdf8; /* sky-400 */
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+.react-datepicker__month-container{
+    background-color: #242424;
+}
+.react-datepicker__day{
+    color:white
+}
+/* styles.css */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+/* From Uiverse.io by neerajbaniwal */ 
+/* <!-- From Uiverse.io by neerajbaniwal --> 
+<a href="#" class="btn-shine">Get early access</a>
+ */
+.btn-shine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+  }
+  @-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  @-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }
+  
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.5s forwards;
+}
+
+.toast-success {
+    background-color: #28a745;
+}
+
+.toast-error {
+    background-color: #dc3545;
+}
+
+.toast-warning {
+    background-color: #ffc107;
+}
+
+.toast-info {
+    background-color: #17a2b8;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+textarea {
+    border: 2px solid;
+    padding: 20px; 
+    width: 300px;
+    resize: none;
+    overflow: auto;
+  }
+  .red{
+    color: white;
+    background-color: #dc3545;
+  }
+  .red:hover{
+    background-color: #9c0716;
+  }
+
+ 
+/* Contenedor de la tabla */
+.table-container {
+  max-height: 350px; /* Altura máxima antes de mostrar el scroll */
+  overflow-y: auto;  /* Habilita el scroll vertical */
+  border: 1px solid #ccc; /* Borde opcional */
+  border-radius: 1px 1px 0px 0px ;
+}
+/* Estilo base del botón */
+.delete-button {
+  background-color: #ff4d4d; /* Color de fondo rojo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+  transition: background-color 0.3s ease; /* Transición suave */
+  display: inline-flex; /* Para alinear icono y texto */
+  align-items: center; /* Centrar verticalmente */
+  gap: 8px; /* Espacio entre icono y texto */
+}
+/* Cambio de color al pasar el mouse */
+.delete-button:hover {
+  background-color: #ff1a1a; /* Rojo más oscuro */
+}
+
+/* Cambio de color al hacer clic */
+.delete-button:active {
+  background-color: #cc0000; /* Rojo aún más oscuro */
+}
+
+
+
+/* Estilos básicos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina el espacio entre celdas */
+}
+
+/* Estilos para las celdas de la tabla */
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo para el encabezado de la tabla */
+thead {
+  position: sticky; /* Hace que el encabezado sea fijo al hacer scroll */
+  top: 0; /* Fija el encabezado en la parte superior */
+}
+.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;max-width:150px;  
+  /* Ajusta el ancho según tus necesidades */ }
+
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    color: #ff4d4f;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .availability-status {
+    margin-top: 0.5rem;
+  }
+  
+  .form-actions {
+    margin-top: 1.5rem;
+    text-align: right;
+  }

@@ -1,0 +1,11 @@
+file:///C:/Users/Angelo%20Martinez/Desktop/planDeDios/server/controllers/time_solts.controller.js:20
+    throw new Error('Las entradas deben ser objetos Date válidos');
+          ^
+
+Error: Las entradas deben ser objetos Date válidos
+    at crearSlots (file:///C:/Users/Angelo%20Martinez/Desktop/planDeDios/server/controllers/time_solts.controller.js:20:11) 
+    at createReservation (file:///C:/Users/Angelo%20Martinez/Desktop/planDeDios/server/controllers/reservation.controller.js:202:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+Node.js v22.16.0
+[nodemon] app crashed - waiting for file changes before starting...

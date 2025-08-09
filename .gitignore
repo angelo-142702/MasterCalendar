@@ -1,0 +1,6 @@
+# Ignorar node_modules en cualquier carpeta del proyecto
+**/node_modules/
+
+# O si quieres ignorar node_modules solo en carpetas específicas:
+server/node_modules/
+frontend/node_modules/

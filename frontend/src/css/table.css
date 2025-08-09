@@ -1,0 +1,65 @@
+/* Estilos generales para la tabla */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+    margin: 20px 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Estilos para las celdas de la tabla */
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  /* Estilos para el encabezado de la tabla */
+  thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* Estilos para las filas del cuerpo de la tabla */
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Estilos para las celdas de datos */
+  td {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Estilos para tablas responsivas */
+  @media (max-width: 768px) {
+    th, td {
+      padding: 10px;
+      font-size: 12px;
+    }
+  }
